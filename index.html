@@ -1,45 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Deccan Aroma Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #1c1c1c;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #fcdd9a, #f8e594, #f9e830);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
     header {
-      background-color: #ffc107;
-      color: #000;
+      color: #ffc107;
+      background-color: #525967;
       padding: 20px;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-section img {
+      height: 80px;
+    }
+    .logo {
+      font-weight: bold;
+        font-size: 60px;
+  font-family: 'Lobster', cursive;
+  font-weight: normal;
+  color: #fff;
+    }
+    .highlight {
+  color: #ffc107;
+}
+
+    .search-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+.search-toggle {
+  font-size: 20px;
+  background: #ffc107;     /* Yellow background */
+  border: none;
+  border-radius: 50%;       /* Makes it circular */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-toggle:hover {
+  background: #e6b806;      /* Slightly darker on hover */
+}
+
+    .search-input {
+      display: none;
+      margin-left: 15px;
+      padding: 8px 12px;
+      border-radius: 4px;
+      border: none;
+      width: 200px;
+      transition: all 0.3s ease;
+    }
+    .search-input.active {
+      display: inline-block;
     }
     .menu-section {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
+      padding: 40px 40px;
+      max-width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
     }
     h2 {
       color: #ffc107;
       border-bottom: 1px solid #ffc107;
       padding-bottom: 5px;
     }
-    table {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .menu-item {
+      background: #2a2a2a;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+    .menu-item img {
       width: 100%;
-      border-collapse: collapse;
-      margin: 10px 0;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
     }
-    th, td {
-      text-align: left;
-      padding: 8px;
-      border-bottom: 1px solid #444;
+    .menu-item:hover img {
+      transform: scale(1.05);
     }
-    th {
+    .menu-info {
+      padding: 15px;
+    }
+    .menu-info h3 {
+      margin: 0 0 5px;
       color: #ffc107;
+      font-size: 18px;
+    }
+    .menu-info p {
+      margin: 0;
+      color: #ccc;
     }
     .footer {
       text-align: center;
@@ -48,86 +132,89 @@
       background: #2a2a2a;
       color: #aaa;
     }
-    .logo {
-      font-size: 32px;
-      font-weight: bold;
-    }
-    .highlight {
-      color: #ffc107;
-    }
   </style>
 </head>
 <body>
+
   <header>
-    <div class="logo">Deccan <span class="highlight">Aroma</span></div>
-    <div>Contact: 7209618253 / 8618148445</div>
+    <div class="logo-section">
+      <img src="logo.png" alt="Logo">
+      <div class="logo">Handi <span class="highlight">Biryani</span></div>
+    </div>
+    <div class="search-container">
+      <input type="text" id="searchInput" class="search-input" placeholder="Search..." oninput="filterMenu()" />
+      <button class="search-toggle" onclick="toggleSearch()">🔍</button>
+    </div>
   </header>
 
-  <div class="menu-section">
-    <h2>Biryani</h2>
-    <table>
-      <tr><th>Item</th><th>Serve 1</th><th>Serve 2</th></tr>
-      <tr><td>Chicken Dum Biryani (Mini)</td><td>120</td><td>-</td></tr>
-      <tr><td>Chicken Dum Biryani (Regular)</td><td>180</td><td>270</td></tr>
-      <tr><td>Special Chicken Biryani</td><td>200</td><td>280</td></tr>
-      <tr><td>Chicken Fry Piece Biryani</td><td>200</td><td>280</td></tr>
-      <tr><td>Chicken Lollipop Biryani</td><td>200</td><td>280</td></tr>
-      <tr><td>Chicken Kebab Biryani</td><td>200</td><td>280</td></tr>
-      <tr><td>Chicken 65 Biryani</td><td>200</td><td>280</td></tr>
-      <tr><td>Dumtar Chicken Biryani</td><td>200</td><td>280</td></tr>
-      <tr><td>Gongura Chicken Biryani</td><td>200</td><td>280</td></tr>
-      <tr><td>Dum Biryani Rice(Khushka)</td><td>100</td><td>150</td></tr>
-      <tr><td>Egg Biryani</td><td>130</td><td>180</td></tr>
-      <tr><td>Paneer Biryani</td><td>170</td><td>260</td></tr>
-      <tr><td>Babycorn Biryani</td><td>160</td><td>270</td></tr>
-      <tr><td>Mushroom Biryani</td><td>160</td><td>270</td></tr>
-      <tr><td>Kaju Biryani</td><td>160</td><td>270</td></tr>
-      <tr><td>Vegetable Fry Biryani</td><td>130</td><td>200</td></tr>
-      <tr><td>Mutton Dum Biryani</td><td>210</td><td>340</td></tr>
-      <tr><td>Mutton Fry Piece Biryani</td><td>230</td><td>340</td></tr>
-      <tr><td>Special Fish Biryani</td><td>200</td><td>310</td></tr>
-      <tr><td>Prawns Fry Biryani</td><td>220</td><td>330</td></tr>
-    </table>
-
-    <h2>Family Pack Biryani</h2>
-    <table>
-      <tr><td>Chicken Dum Biryani</td><td>480</td></tr>
-      <tr><td>Special Chicken Biryani</td><td>580</td></tr>
-      <tr><td>Chicken Fry Piece Biryani</td><td>510</td></tr>
-      <tr><td>Chicken Lollipop Biryani</td><td>530</td></tr>
-      <tr><td>Chicken Kebab Biryani</td><td>530</td></tr>
-      <tr><td>Chicken 65 Biryani</td><td>530</td></tr>
-      <tr><td>Dumtar Chicken Biryani</td><td>530</td></tr>
-      <tr><td>Gongura Chicken Biryani</td><td>530</td></tr>
-      <tr><td>Paneer Biryani</td><td>480</td></tr>
-      <tr><td>Mushroom Biryani</td><td>480</td></tr>
-      <tr><td>Vegetable Fry Biryani</td><td>480</td></tr>
-      <tr><td>Mutton Dum Biryani</td><td>680</td></tr>
-      <tr><td>Mutton Fry Piece Biryani</td><td>680</td></tr>
-    </table>
-
-    <h2>Desserts</h2>
-    <table>
-      <tr><td>Gulab Jamun</td><td>50</td></tr>
-      <tr><td>Double Ka Meetha</td><td>50</td></tr>
-    </table>
-
-    <h2>Cold Drinks</h2>
-    <p>As per MRP</p>
-
-    <h2>Combos</h2>
-    <table>
-      <tr><td>Combo 1</td><td>280 - Chicken Dum Biryani (Regular) + Lollipop/Kebab (2 pcs) + 200ml Soft Drink + Gulab Jamun</td></tr>
-      <tr><td>Combo 2</td><td>300 - Special Chicken Biryani (Regular) + Lollipop/Kebab (2 pcs) + 200ml Soft Drink + Gulab Jamun</td></tr>
-      <tr><td>Combo 3</td><td>610 - Chicken Dum Biryani (Family Pack) + Lollipop/Kebab (4 pcs) + 750ml Soft Drink + Gulab Jamun</td></tr>
-      <tr><td>Combo 4</td><td>690 - Special Chicken Biryani (Family Pack) + Lollipop/Kebab (4 pcs) + 750ml Soft Drink + Gulab Jamun</td></tr>
-      <tr><td>Combo 5</td><td>440 - Mutton Biryani (Regular) + Mutton Fry + 250ml Soft Drink + Gulab Jamun</td></tr>
-      <tr><td>Combo 6</td><td>890 - Mutton Biryani (Family Pack) + Mutton Fry + 750ml Soft Drink + Gulab Jamun</td></tr>
-    </table>
+  <div class="menu-section" id="menuSections">
+    <!-- Dynamic menu sections go here -->
   </div>
 
   <div class="footer">
     &copy; 2025 Deccan Aroma | Built with love for biryani lovers 🍽️
   </div>
+
+  <script src="fooditem.js"></script>
+  <script>
+    const menuSections = document.getElementById('menuSections');
+
+    function renderMenu(items) {
+      menuSections.innerHTML = '';
+
+      const grouped = items.reduce((acc, item) => {
+        if (!acc[item.category]) acc[item.category] = [];
+        acc[item.category].push(item);
+        return acc;
+      }, {});
+
+      for (const category in grouped) {
+        const section = document.createElement('div');
+        section.innerHTML = `
+          <h2>${category}</h2>
+          <div class="grid">
+            ${grouped[category].map(item => `
+              <div class="menu-item">
+                <img src="${item.image_url}" alt="${item.name}" />
+                <div class="menu-info">
+                  <h3>${item.name}</h3>
+                  ${
+                    item.serve1 !== undefined
+                      ? `<p>Serve 1: ₹${item.serve1}${item.serve2 ? ` | Serve 2: ₹${item.serve2}` : ''}</p>`
+                      : `<p>₹${item.price ?? '-'}</p>`
+                  }
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        `;
+        menuSections.appendChild(section);
+      }
+    }
+
+    function filterMenu() {
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const filtered = foodItems.filter(item =>
+        item.name.toLowerCase().includes(query) ||
+        item.category.toLowerCase().includes(query)
+      );
+      renderMenu(filtered);
+    }
+
+    function toggleSearch() {
+      const input = document.getElementById('searchInput');
+      input.classList.toggle('active');
+      if (input.classList.contains('active')) {
+        input.focus();
+      } else {
+        input.value = '';
+        renderMenu(foodItems);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderMenu(foodItems);
+    });
+  </script>
 </body>
 </html>
