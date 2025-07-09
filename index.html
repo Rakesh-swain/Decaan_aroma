@@ -4,9 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Deccan Aroma Menu</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Makulath&display=swap" rel="stylesheet">
+
 
   <style>
+    @font-face {
+  font-family: 'Makulath';
+  src: url('fonts/Makulath-DYOA0.otf') format('opentype');
+}
+
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #fcdd9a, #f8e594, #f9e830);
@@ -33,13 +39,19 @@ body {
     .logo-section img {
       height: 80px;
     }
-    .logo {
-      font-weight: bold;
-        font-size: 60px;
-  font-family: 'Lobster', cursive;
+   .logo {
+  font-size: 60px;
+  font-family: 'Makulath', cursive;
   font-weight: normal;
   color: #fff;
-    }
+}
+.logo2{
+  font-family: 'Makulath', cursive;
+}
+
+
+
+
     .highlight {
   color: #ffc107;
 }
@@ -139,7 +151,7 @@ body {
   <header>
     <div class="logo-section">
       <img src="logo.png" alt="Logo">
-      <div class="logo">Handi <span class="highlight">Biryani</span></div>
+      <div class="logo2">Handi Biryani</div>
     </div>
     <div class="search-container">
       <input type="text" id="searchInput" class="search-input" placeholder="Search..." oninput="filterMenu()" />
