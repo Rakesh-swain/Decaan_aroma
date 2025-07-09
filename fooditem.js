@@ -11,7 +11,7 @@ const foodItems = [
     "id": 2,
     "name": "Chicken Dum Biryani (Regular)",
     "category": "Biryani",
-    "serve1": 210,
+    "serve1": 190,
     "serve2": 290,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhOWLXy8NWHC3XLUSrwAakESTdEP_qcrEm_-TjsOynq8BM4nBdiE64klClRZFhTH4UkNXWx-FvHHvCrMf8xriEpq4Q=s680-w680-h510-rw"
   },
@@ -19,8 +19,8 @@ const foodItems = [
     "id": 3,
     "name": "Special Chicken Biryani",
     "category": "Biryani",
-    "serve1": 230,
-    "serve2": 320,
+    "serve1": 210,
+    "serve2": 310,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhMt4nYRydvPuShFdht9RtjAOP403-YNCUyRx7vpkdp9732fZ3pA5fjUKfU0JoYVbH2t3UZ8tJakK5p2cfnJ4qbLZA=s680-w680-h510-rw"
   },
   {
@@ -35,8 +35,8 @@ const foodItems = [
     "id": 5,
     "name": "Chicken Lollipop Biryani",
     "category": "Biryani",
-    "serve1": 210,
-    "serve2": 310,
+    "serve1": 220,
+    "serve2": 320,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhMdSbItKe5BdH_SigFFeFG-DfBWqFEuXc8nsdhcqHmGPLEPCRR7h5ToD_aRJoNgU2h-F1YWUCXFNhg89yofjjIr5g=s680-w680-h510-rw"
   },
   {
@@ -75,8 +75,8 @@ const foodItems = [
     "id": 10,
     "name": "Egg Biryani",
     "category": "Biryani",
-    "serve1": 160,
-    "serve2": 250,
+    "serve1": 130,
+    "serve2": 230,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNOTw1SQRR88fYgwj15nSWHN9iwRgpejW4ZMcet2K5q_ZysSORLw-x5cNZUWfWg3twGuDxTDTr1UV1lufc_oujuzA=s680-w680-h510-rw"
   },
   {
@@ -115,15 +115,15 @@ const foodItems = [
     "id": 15,
     "name": "Special Fish Biryani",
     "category": "Biryani",
-    "serve1": 230,
-    "serve2": 340,
+    "serve1": 220,
+    "serve2": 320,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhPYZCNuwTw7HWi2lm6guwONoVxtR1lDpf3AhSyfnVz83OoHnbPmZbAUDusp5VIg0pycjkPO0SkCCcA-hdNWyVOz4A=s680-w680-h510-rw"
   },
   {
     "id": 16,
     "name": "Prawns Fry Biryani",
     "category": "Biryani",
-    "serve1": 220,
+    "serve1": 230,
     "serve2": 330,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNj58alv0kniUYCGnyiihvA255rGGv870AffA8K6M_hbJplo_Hcg0MEtp6FT6j0zVMJHAy2Cc8OD-NYO0IcuCaOmg=s680-w680-h510-rw"
   },
@@ -146,35 +146,35 @@ const foodItems = [
     "id": 19,
     "name": "Special Chicken Biryani",
     "category": "Family Pack Biryani",
-    "price": 580,
+    "price": 600,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhMt4nYRydvPuShFdht9RtjAOP403-YNCUyRx7vpkdp9732fZ3pA5fjUKfU0JoYVbH2t3UZ8tJakK5p2cfnJ4qbLZA=s680-w680-h510-rw"
   },
   {
     "id": 20,
     "name": "Chicken Fry Piece Biryani",
     "category": "Family Pack Biryani",
-    "price": 610,
+    "price": 580,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNy7NpgpUgg8K524bJv2xa_cECthiE782YCDJYkehqTvNlvUzNbPGjBYdtY5neBXHjKw5S_Ti4xk1RKXakVIRHaEg=s680-w680-h510-rw"
   },
   {
     "id": 21,
     "name": "Chicken Lollipop Biryani",
     "category": "Family Pack Biryani",
-    "price": 580,
+    "price": 680,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhMdSbItKe5BdH_SigFFeFG-DfBWqFEuXc8nsdhcqHmGPLEPCRR7h5ToD_aRJoNgU2h-F1YWUCXFNhg89yofjjIr5g=s680-w680-h510-rw"
   },
   {
     "id": 22,
     "name": "Chicken Kebab Biryani",
     "category": "Family Pack Biryani",
-    "price": 580,
+    "price": 630,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNAvjQbmvMEy1QQfsgWZ_2Fb0Q-EpxuTgP1NJ05kw3-iLvCpt80Cnu2QxCgnSWdvUulhlxEHg4d-KD_welxad4osw=s680-w680-h510-rw"
   },
   {
     "id": 23,
     "name": "Chicken 65 Biryani",
     "category": "Family Pack Biryani",
-    "price": 580,
+    "price": 600,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhPJee-mDrqy-BCll2h9tfGiJScHw33FoT2XICnLmYxZkvpD5HYVpthzMlbFood2UYAosfrj9FNO4REh_tHWTXzWsg=s680-w680-h510-rw"
   },
   {
@@ -195,21 +195,21 @@ const foodItems = [
     "id": 26,
     "name": "Paneer Biryani",
     "category": "Family Pack Biryani",
-    "price": 480,
+    "price": 520,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhOG_q5BPxLhxRUJcpZvGYD-pVsnIOf8fqb9eaW08YNmzfJuFm6r5IRX5KYUhLIaryTGI-lP6Onfrs3sZDn4l5AkgA=s680-w680-h510-rw"
   },
   {
     "id": 27,
     "name": "Babycorn Biryani",
     "category": "Family Pack Biryani",
-    "price": 470,
+    "price": 500,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhMH8sBlFMgni3XVNpfmMo-gR73Al8rqJX4zcwVSFAhZrboOsL0sUmi6D5Z8hmBRacDWR-e5WdLUFYd1SoItYkwqRg=s680-w680-h510-rw"
   },
   {
     "id": 28,
     "name": "Mushroom Biryani",
     "category": "Family Pack Biryani",
-    "price": 470,
+    "price": 500,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNFpgnCh9ZTT-LKddWpS9bn8h-Gf71z3hMLfCSwSMH5TFKTy-YAX2ggplM0-8zv1LQcsTxFX-dLMa5JlX6mK03RRg=s680-w680-h510-rw"
   },
   {
@@ -496,28 +496,28 @@ const foodItems = [
     "id": 68,
     "name": "Mushroom Chilli",    
     "category": "Veg Starters",
-    "price": 170,
+    "price": 180,
     "image_url": "https://www.thevellorekitchen.in/wp-content/uploads/2023/01/Chilli-Mushroom-Dry.jpg"
   },
   {
     "id": 69,
     "name": "Mushroom Manchurian",
     "category": "Veg Starters",
-    "price": 170,
+    "price": 180,
     "image_url": "https://cdn2.foodviva.com/static-content/food-images/chinese-recipes/mushroom-manchurian-recipe/mushroom-manchurian-recipe.jpg"
   },
   {
     "id": 70,
     "name": "Mushroom Pepper",
     "category": "Veg Starters",
-    "price": 170,
+    "price": 180,
     "image_url": "https://www.relishthebite.com/wp-content/uploads/2018/06/mushroomPepperRestaurantstyle-11.jpg"
   },
   {
     "id": 71,
     "name": "Mushroom 65",
     "category": "Veg Starters",
-    "price": 170,
+    "price": 180,
     "image_url": "https://herbivo.in/wp-content/uploads/2023/03/Mushroom-65.png.webp"
   },
   {
@@ -594,7 +594,7 @@ const foodItems = [
     "id": 82,
     "name": "Butter Chicken Masala",
     "category": "Non Veg Curry",
-    "price": 190,
+    "price": 200,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNeuVe7rp4oMvgylMBU_GhGJWld2Oti7ekOYTXEUacbwCPOgPz5wLTZh2KTf1H18Dq6Yq6dVFiODV2rhojKw7OzmQ=s680-w680-h510-rw"
   },
   {
@@ -622,14 +622,14 @@ const foodItems = [
     "id": 86,
     "name": "Chicken Mughlai",
     "category": "Non Veg Curry",
-    "price": 190,
+    "price": 200,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhORI1F3-JnJl2POr2V0vDI-vD1uXY9wOwQ9Xv8GdKejIoQViV20gwwxsZbYCh5zneMqghDxrwo8rb9IkitcG7ajSg=s680-w680-h510-rw"
   },
   {
     "id": 87,
     "name": "Chicken Punjabi",
     "category": "Non Veg Curry",
-    "price": 190,
+    "price": 200,
     "image_url": "https://www.foodyindianmom.com/images/punjabi_chicken.png"
   },
   {
@@ -643,49 +643,49 @@ const foodItems = [
     "id": 89,
     "name": "Gongura Chicken Curry",
     "category": "Non Veg Curry",
-    "price": 240,
+    "price": 190,
     "image_url": "https://media.oceanofrecipes.com/images/indian/gongura-chicken/42.JPG"
   },
   {
     "id": 90,
     "name": "Paneer Butter Masala",
     "category": "Veg Curry",
-    "price": 150,
+    "price": 200,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhPO-TohNRr7qn2yqcRVvnR7_botP_hMEo1hmzlYlvF29L6EEThw9xODQZryuDLDS_8DtOJlaitrv-lvcm7-we5bfA=s680-w680-h510-rw"
   },
   {
     "id": 91,
     "name": "Paneer Kadai",
     "category": "Veg Curry",
-    "price": 150,
+    "price": 190,
     "image_url": "https://www.cubesnjuliennes.com/wp-content/uploads/2020/03/Best-Kadai-Paneer-Recipe.jpg"
   },
   {
     "id": 92,
     "name": "Paneer Palak",
     "category": "Veg Curry",
-    "price": 150,
+    "price": 200,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNQadNAngb_NnBAazOOi8FkJPTbLXLvEXNsuJfAf9OUPjgYhHoraDhGUAAuQM0OSKbMNMuOxObJWUOO_FB8zKd4NA=s680-w680-h510-rw"
   },
   {
     "id": 93,
     "name": "Kaju Paneer",
     "category": "Veg Curry",
-    "price": 170,
+    "price": 220,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNEc0MSl2GdWsK3FPdKCvZdb88mHIrIg2o7kTb-9HUOR17y33wKxIpv88DXUsqnFwWNRD_EyUXdmVEYL_FF4TXVVg=s680-w680-h510-rw"
   },
   {
     "id": 94,
     "name": "Kaju Masala",
     "category": "Veg Curry",
-    "price": 200,
+    "price": 220,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhMQ8ACage0bhYyl61OVSNrcK2ZNsW_5R8wx4hBX74I5iWRsumG1pHLtCLMtlI_WiJiyjolrVk0W0DjhVIM80waaAg=s680-w680-h510-rw"
   },
   {
     "id": 95,
     "name": "Kaju Butter Masala",
     "category": "Veg Curry",
-    "price": 200,
+    "price": 190,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhOVifsrO__4VBjxKsxjMljowRM92VkZNDl0eN1cSqZx-0MJFJdXHUMlVsNbEOQApWgP6ejLavDHNHIHDeX4XNBSmQ=s680-w680-h510-rw"
   },
   // {
@@ -762,21 +762,21 @@ const foodItems = [
     "id": 106,
     "name": "Egg Fried Rice",
     "category": "Fried Rice",
-    "price": 110,
+    "price": 120,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNyeVjIdFPs7iW_CLZW0aPqYSvIQbWgXepiY-ZpaX1Yu9ZhdC8vLZkZz4Xi7jtb9pAO1KmXNhmBN0ZGaR5Duff1xA=s680-w680-h510-rw"
   },
   {
     "id": 107,
     "name": "Veg Fried Rice",
     "category": "Fried Rice",
-    "price": 90,
+    "price": 100,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNxdK2Sfst4Hx_-k1jTJxl3KeBfT168ICP8GhzNrxik_uGpxITuYzy92MitKfthI9EmMZQ9Vg5_Vi7ChM2e0gXMBg=s680-w680-h510-rw"
   },
   {
     "id": 108,
     "name": "Mushroom Fried Rice",
     "category": "Fried Rice",
-    "price": 100,
+    "price": 110,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNQJTqNbetX5hujGyY63WB16EHSjlCeohzALFyMPLXwgP7IvDTpV43i8NS6IgO68TGb7GB3jTUimwg0tk_GV-Eo6Q=s680-w680-h510-rw"
   },
   {
@@ -790,28 +790,28 @@ const foodItems = [
     "id": 110,
     "name": "Babycorn Fried Rice",
     "category": "Fried Rice",
-    "price": 100,
+    "price": 120,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhPYIrb6LXKaScNEOqFssCuDC_VhkWLt_mF9Nsgc6W_xGCZLi2SzQw2KrWrnV8UhKRqOwQjNdZDwKk4cHcgGiTeKxA=s680-w680-h510-rw"
   },
   {
     "id": 111,
     "name": "Gobi Fried Rice",
     "category": "Fried Rice",
-    "price": 100,
+    "price": 110,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhOiZpFRrFl4znpCnmBg8n1SZerDijSQzEYKKTPnH4n03HQWM7JBWQKS-ASomcBvMtzKiOMz3T8O7uOS06HH5pyFug=s680-w680-h510-rw"
   },
   {
     "id": 112,
     "name": "Jeera Rice",
     "category": "Fried Rice",
-    "price": 80,
+    "price": 90,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhMXL8wU35UC9O5fRitpeji1QHL6GH55mZoLd9jd7r2f4Y5hyfbrQ56W0R6vVCZ5BwIe1hkRAc4gOnrinuAqQNnebg=s680-w680-h510-rw"
   },
   {
     "id": 113,
     "name": "Ginger Rice",
     "category": "Fried Rice",
-    "price": 90,
+    "price": 100,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhMXL8wU35UC9O5fRitpeji1QHL6GH55mZoLd9jd7r2f4Y5hyfbrQ56W0R6vVCZ5BwIe1hkRAc4gOnrinuAqQNnebg=s680-w680-h510-rw "
   },
   {
@@ -825,14 +825,14 @@ const foodItems = [
     "id": 115,
     "name": "Ginger Chicken Fried Rice",
     "category": "Fried Rice",
-    "price": 120,
+    "price": 130,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhOA3heDUuHHDvImO852AH1WiUqsqR_mewBBdT_YYVqCzXzi604ftaA0FwITYvonKl9r1dC-ipNgOaIj2LGCSGwCPg=s680-w680-h510-rw"
   },
   {
     "id": 116,
     "name": "Schezwan Veg Fried Rice",
     "category": "Fried Rice",
-    "price": 130,
+    "price": 120,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNl5BfgzX6v4iwzUTdx9fFQaFaWBYFNOqDCW7YQ9_TAd27RtNR6KV8UEs7CF0_0R4MUhtS9tf2my4aEFK8qQRMbaw=s680-w680-h510-rw"
   },
   {
@@ -860,7 +860,7 @@ const foodItems = [
     "id": 120,
     "name": "Apollo Fish",
     "category": "Sea Food",
-    "price": 180,
+    "price": 210,
     "image_url": "https://www.licious.in/blog/wp-content/uploads/2020/12/Hyderabadi-Apollo-Fish.jpg"
   },
   {
@@ -902,14 +902,14 @@ const foodItems = [
     "id": 126,
     "name": "Prawns Manchurian",
     "category": "Sea Food",
-    "price": 200,
+    "price": 220,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNv-qSFPfvBdR5P89iaETqVdT6tWcTS53FuBPhZBXBoC_HouVGez_-ClCdcorTdBjgseW96xTE2zXtRnIY_IzBNlg=s680-w680-h510-rw"
   },
   {
     "id": 127,
     "name": "Prawns Pepper",
     "category": "Sea Food",
-    "price": 200,
+    "price": 220,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhO31R24QmDPyrX2QqCuKMePxq8PVcoPXOY7WlbZhDjAoQfHze3Lj-WL0SYGTJvSSqqA2dInZlKWOaJrpUYfCD26VQ=s680-w680-h510-rw"
   },
   {
