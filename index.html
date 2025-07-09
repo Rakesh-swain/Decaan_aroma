@@ -146,6 +146,9 @@ body {
       <button class="search-toggle" onclick="toggleSearch()">🔍</button>
     </div>
   </header>
+<nav id="categoryNav" style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; padding: 20px; background-color:#fff3cd;">
+  <!-- Buttons will be injected here -->
+</nav>
 
   <div class="menu-section" id="menuSections">
     <!-- Dynamic menu sections go here -->
@@ -160,37 +163,58 @@ body {
     const menuSections = document.getElementById('menuSections');
 
     function renderMenu(items) {
-      menuSections.innerHTML = '';
+  menuSections.innerHTML = '';
+  const grouped = items.reduce((acc, item) => {
+    if (!acc[item.category]) acc[item.category] = [];
+    acc[item.category].push(item);
+    return acc;
+  }, {});
 
-      const grouped = items.reduce((acc, item) => {
-        if (!acc[item.category]) acc[item.category] = [];
-        acc[item.category].push(item);
-        return acc;
-      }, {});
+  // Render category navigation
+  const categoryNav = document.getElementById('categoryNav');
+  categoryNav.innerHTML = Object.keys(grouped).map(category =>
+    `<button onclick="scrollToSection('${category}')" style="
+      background-color: #ffc107;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    ">${category}</button>`
+  ).join('');
 
-      for (const category in grouped) {
-        const section = document.createElement('div');
-        section.innerHTML = `
-          <h2>${category}</h2>
-          <div class="grid">
-            ${grouped[category].map(item => `
-              <div class="menu-item">
-                <img src="${item.image_url}" alt="${item.name}" />
-                <div class="menu-info">
-                  <h3>${item.name}</h3>
-                  ${
-                    item.serve1 !== undefined
-                      ? `<p>Serve 1: ₹${item.serve1}${item.serve2 ? ` | Serve 2: ₹${item.serve2}` : ''}</p>`
-                      : `<p>₹${item.price ?? '-'}</p>`
-                  }
-                </div>
-              </div>
-            `).join('')}
+  for (const category in grouped) {
+    const section = document.createElement('div');
+    section.id = category;
+    section.innerHTML = `
+      <h2>${category}</h2>
+      <div class="grid">
+        ${grouped[category].map(item => `
+          <div class="menu-item">
+            <img src="${item.image_url}" alt="${item.name}" />
+            <div class="menu-info">
+              <h3>${item.name}</h3>
+              ${
+                item.serve1 !== undefined
+                  ? `<p>Serve 1: ₹${item.serve1}${item.serve2 ? ` | Serve 2: ₹${item.serve2}` : ''}</p>`
+                  : `<p>₹${item.price ?? '-'}</p>`
+              }
+            </div>
           </div>
-        `;
-        menuSections.appendChild(section);
-      }
-    }
+        `).join('')}
+      </div>
+    `;
+    menuSections.appendChild(section);
+  }
+}
+
+function scrollToSection(categoryId) {
+  const target = document.getElementById(categoryId);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
 
     function filterMenu() {
       const query = document.getElementById('searchInput').value.toLowerCase();
