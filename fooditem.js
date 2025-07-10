@@ -2,7 +2,7 @@ const foodItems = [
   {
     "id": 1,
     "name": "Chicken Dum Biryani (Mini)",
-    "category": "Biryani",
+    "category": "Hyderabadi Chicken Dum Biryani",
     "serve1": 130,
     "serve2": null,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhMSnWYx2cc8stKna14CL4ZTIPwaoejHeNAakBH9kxnLSlZUkmJg9lmN9oGnNKv-MT05-e_b2U0OcqQ-8uqkQieITg=s680-w680-h510-rw"
@@ -10,7 +10,7 @@ const foodItems = [
   {
     "id": 2,
     "name": "Chicken Dum Biryani (Regular)",
-    "category": "Biryani",
+    "category": "Hyderabadi Chicken Dum Biryani",
     "serve1": 190,
     "serve2": 290,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhOWLXy8NWHC3XLUSrwAakESTdEP_qcrEm_-TjsOynq8BM4nBdiE64klClRZFhTH4UkNXWx-FvHHvCrMf8xriEpq4Q=s680-w680-h510-rw"
@@ -18,7 +18,7 @@ const foodItems = [
   {
     "id": 3,
     "name": "Special Chicken Biryani",
-    "category": "Biryani",
+    "category": "Hyderabadi Chicken Dum Biryani",
     "serve1": 210,
     "serve2": 310,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhMt4nYRydvPuShFdht9RtjAOP403-YNCUyRx7vpkdp9732fZ3pA5fjUKfU0JoYVbH2t3UZ8tJakK5p2cfnJ4qbLZA=s680-w680-h510-rw"
@@ -26,7 +26,7 @@ const foodItems = [
   {
     "id": 4,
     "name": "Chicken Fry Piece Biryani",
-    "category": "Biryani",
+    "category": "Hyderabadi Chicken Dum Biryani",
     "serve1": 210,
     "serve2": 310,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNy7NpgpUgg8K524bJv2xa_cECthiE782YCDJYkehqTvNlvUzNbPGjBYdtY5neBXHjKw5S_Ti4xk1RKXakVIRHaEg=s680-w680-h510-rw"
@@ -34,7 +34,7 @@ const foodItems = [
   {
     "id": 5,
     "name": "Chicken Lollipop Biryani",
-    "category": "Biryani",
+    "category": "Hyderabadi Chicken Dum Biryani",
     "serve1": 220,
     "serve2": 320,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhMdSbItKe5BdH_SigFFeFG-DfBWqFEuXc8nsdhcqHmGPLEPCRR7h5ToD_aRJoNgU2h-F1YWUCXFNhg89yofjjIr5g=s680-w680-h510-rw"
@@ -42,7 +42,7 @@ const foodItems = [
   {
     "id": 6,
     "name": "Chicken Kebab Biryani",
-    "category": "Biryani",
+    "category": "Hyderabadi Chicken Dum Biryani",
     "serve1": 210,
     "serve2": 310,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNAvjQbmvMEy1QQfsgWZ_2Fb0Q-EpxuTgP1NJ05kw3-iLvCpt80Cnu2QxCgnSWdvUulhlxEHg4d-KD_welxad4osw=s680-w680-h510-rw"
@@ -50,7 +50,7 @@ const foodItems = [
   {
     "id": 7,
     "name": "Chicken 65 Biryani",
-    "category": "Biryani",
+    "category": "Hyderabadi Chicken Dum Biryani",
     "serve1": 210,
     "serve2": 310,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhPJee-mDrqy-BCll2h9tfGiJScHw33FoT2XICnLmYxZkvpD5HYVpthzMlbFood2UYAosfrj9FNO4REh_tHWTXzWsg=s680-w680-h510-rw"
@@ -58,7 +58,7 @@ const foodItems = [
   {
     "id": 8,
     "name": "Guntur Chicken Biryani",
-    "category": "Biryani",
+    "category": "Hyderabadi Chicken Dum Biryani",
     "serve1": 210,
     "serve2": 310,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNMUPkHxHjrlHomBnkzmJ5Dw-FcNVDdad7mpNhNLR47QSDeDJ-SOshtzF4y8cnIo1uHHeALw0s8plXQ4maQ9V5oVQ=s680-w680-h510-rw"
@@ -66,7 +66,7 @@ const foodItems = [
   {
     "id": 9,
     "name": "Gongura Chicken Biryani",
-    "category": "Biryani",
+    "category": "Hyderabadi Chicken Dum Biryani",
     "serve1": 210,
     "serve2": 310,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhMxxpinsoJsGnr0zso42O0wWLMuSddINptkjwL3ma1F6xDNFug239QRar2pGRAf2ssSMRDNuXmFVcI90O-CXKRebw=s680-w680-h510-rw"
@@ -74,7 +74,7 @@ const foodItems = [
   {
     "id": 10,
     "name": "Egg Biryani",
-    "category": "Biryani",
+    "category": "Hyderabadi Chicken Dum Biryani",
     "serve1": 130,
     "serve2": 230,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNOTw1SQRR88fYgwj15nSWHN9iwRgpejW4ZMcet2K5q_ZysSORLw-x5cNZUWfWg3twGuDxTDTr1UV1lufc_oujuzA=s680-w680-h510-rw"
@@ -82,7 +82,7 @@ const foodItems = [
   {
     "id": 11,
     "name": "Paneer Biryani",
-    "category": "Biryani",
+    "category": "Hyderabadi Chicken Dum Biryani",
     "serve1": 180,
     "serve2": 280,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhOG_q5BPxLhxRUJcpZvGYD-pVsnIOf8fqb9eaW08YNmzfJuFm6r5IRX5KYUhLIaryTGI-lP6Onfrs3sZDn4l5AkgA=s680-w680-h510-rw"
@@ -90,7 +90,7 @@ const foodItems = [
   {
     "id": 12,
     "name": "Babycorn Biryani",
-    "category": "Biryani",
+    "category": "Hyderabadi Chicken Dum Biryani",
     "serve1": 170,
     "serve2": 270,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhMH8sBlFMgni3XVNpfmMo-gR73Al8rqJX4zcwVSFAhZrboOsL0sUmi6D5Z8hmBRacDWR-e5WdLUFYd1SoItYkwqRg=s680-w680-h510-rw"
@@ -98,7 +98,7 @@ const foodItems = [
   {
     "id": 13,
     "name": "Mushroom Biryani",
-    "category": "Biryani",
+    "category": "Hyderabadi Chicken Dum Biryani",
     "serve1": 170,
     "serve2": 270,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNFpgnCh9ZTT-LKddWpS9bn8h-Gf71z3hMLfCSwSMH5TFKTy-YAX2ggplM0-8zv1LQcsTxFX-dLMa5JlX6mK03RRg=s680-w680-h510-rw"
@@ -106,7 +106,7 @@ const foodItems = [
   {
     "id": 14,
     "name": "Kaju Biryani",
-    "category": "Biryani",
+    "category": "Hyderabadi Chicken Dum Biryani",
     "serve1": 180,
     "serve2": 280,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhOb8PJUHC1C_0TQNr3NAp6FsaQKkywWXreEyA0OymbZp8UBTStTVGOAu3uqmSoC9oVUdyaxVSi6GnoX1D8riqW4pw=s680-w680-h510-rw"
@@ -114,7 +114,7 @@ const foodItems = [
   {
     "id": 15,
     "name": "Special Fish Biryani",
-    "category": "Biryani",
+    "category": "Hyderabadi Chicken Dum Biryani",
     "serve1": 220,
     "serve2": 320,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhPYZCNuwTw7HWi2lm6guwONoVxtR1lDpf3AhSyfnVz83OoHnbPmZbAUDusp5VIg0pycjkPO0SkCCcA-hdNWyVOz4A=s680-w680-h510-rw"
@@ -122,7 +122,7 @@ const foodItems = [
   {
     "id": 16,
     "name": "Prawns Fry Biryani",
-    "category": "Biryani",
+    "category": "Hyderabadi Chicken Dum Biryani",
     "serve1": 230,
     "serve2": 330,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhNj58alv0kniUYCGnyiihvA255rGGv870AffA8K6M_hbJplo_Hcg0MEtp6FT6j0zVMJHAy2Cc8OD-NYO0IcuCaOmg=s680-w680-h510-rw"
@@ -130,7 +130,7 @@ const foodItems = [
   {
     "id": 17,
     "name": "Dum Biryani Rice (Khushka)",
-    "category": "Biryani",
+    "category": "Hyderabadi Chicken Dum Biryani",
     "serve1": 100,
     "serve2": 200,
     "image_url": "https://lh3.googleusercontent.com/geofoodgmb/AC9zUhPJ38eMLaLJrPyLBySXLQj_G2n8Cgksrss-dXqZ4unOfhcnNPkaaVYgxyRTIsr2O0U2pNBjwQcHJwuDrsCMlGwyuA=s680-w680-h510-rw"

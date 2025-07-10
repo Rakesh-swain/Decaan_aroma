@@ -4,17 +4,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Deccan Aroma Menu</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Makulath&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
 
   <style>
+    @font-face {
+  font-family: 'Makulath';
+  src: url('fonts/Makulath-DYOA0.otf') format('opentype');
+  
+}
+#categoryNav button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-transform: capitalize; /* or uppercase */
+  letter-spacing: 0.5px;
+  color: #000;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #fcdd9a, #f8e594, #f9e830);
-  color: #333;
+  font-family:"Roboto", sans-serif;
+  background: url('backgroundimage.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
 }
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Increase this value (0.6 → 0.8 for more darkness) */
+  z-index: -1;
+}
+
+
+
 
     header {
       color: #ffc107;
@@ -33,13 +68,49 @@ body {
     .logo-section img {
       height: 80px;
     }
-    .logo {
-      font-weight: bold;
-        font-size: 60px;
-  font-family: 'Lobster', cursive;
+   .logo {
+  font-size: 60px;
+  font-family: 'Makulath', cursive;
   font-weight: normal;
   color: #fff;
-    }
+}
+.logo2 {
+  font-family: 'Makulath', cursive;
+  font-size: 40px; 
+  background: linear-gradient(45deg, #ffc107, #f49f2f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  background: transparent;
+  border: 2px solid #ffc107;
+  color: #ffc107;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 193, 7, 0.4);
+}
+
+#scrollTopBtn:hover {
+  background-color: #ffc107;
+  color: #2a2a2a;
+  transform: scale(1.1);
+}
+
+
+
+
+
     .highlight {
   color: #ffc107;
 }
@@ -87,8 +158,10 @@ body {
       box-sizing: border-box;
     }
     h2 {
-      color: #ffc107;
-      border-bottom: 1px solid #ffc107;
+        font-family:'Noto Sans Display', sans-serif;
+
+      color: #ffa807;
+      border-bottom: 1px solid #ffa807;
       padding-bottom: 5px;
     }
     .grid {
@@ -139,14 +212,14 @@ body {
   <header>
     <div class="logo-section">
       <img src="logo.png" alt="Logo">
-      <div class="logo">Handi <span class="highlight">Biryani</span></div>
+      <div class="logo2">Handi Biryani</div>
     </div>
     <div class="search-container">
       <input type="text" id="searchInput" class="search-input" placeholder="Search..." oninput="filterMenu()" />
       <button class="search-toggle" onclick="toggleSearch()">🔍</button>
     </div>
   </header>
-<nav id="categoryNav" style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; padding: 20px; background-color:#fff3cd;">
+<nav id="categoryNav" style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; padding: 20px; background-color: #525967;">
   <!-- Buttons will be injected here -->
 </nav>
 
@@ -174,12 +247,13 @@ body {
   const categoryNav = document.getElementById('categoryNav');
   categoryNav.innerHTML = Object.keys(grouped).map(category =>
     `<button onclick="scrollToSection('${category}')" style="
-      background-color: #ffc107;
+      background-color: #f5a43a;
       border: none;
       padding: 10px 15px;
       border-radius: 20px;
       cursor: pointer;
       font-weight: bold;
+      font-family: "Roboto", sans-serif;
       transition: background 0.3s ease;
     ">${category}</button>`
   ).join('');
@@ -196,10 +270,11 @@ body {
             <div class="menu-info">
               <h3>${item.name}</h3>
               ${
-                item.serve1 !== undefined
-                  ? `<p>Serve 1: ₹${item.serve1}${item.serve2 ? ` | Serve 2: ₹${item.serve2}` : ''}</p>`
-                  : `<p>₹${item.price ?? '-'}</p>`
-              }
+  item.serve1 !== undefined
+    ? `<p>Serve 1: ₹<strong>${item.serve1}</strong>${item.serve2 ? ` |  ₹<strong>${item.serve2}</strong>` : ''}</p>`
+    : `<p><strong>₹${item.price ?? '-'}</strong></p>`
+}
+
             </div>
           </div>
         `).join('')}
@@ -239,6 +314,30 @@ function scrollToSection(categoryId) {
     document.addEventListener('DOMContentLoaded', () => {
       renderMenu(foodItems);
     });
+
+    
   </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+    // Show button when user scrolls down
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 200) {
+        scrollBtn.style.display = "flex";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    });
+
+    // Scroll to top on click
+    scrollBtn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+</script>
+
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
 </body>
 </html>
