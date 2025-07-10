@@ -35,6 +35,9 @@ body {
   height: 100vh;
   position: relative;
   z-index: 0;
+  perspective: 1px;
+  backface-visibility: hidden;
+  background-color: #000;
 }
 
 body::before {
@@ -46,6 +49,8 @@ body::before {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Increase this value (0.6 → 0.8 for more darkness) */
   z-index: -1;
+  will-change: transform, opacity;
+  transform: translateZ(0); 
 }
 
 
